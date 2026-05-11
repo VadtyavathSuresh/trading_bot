@@ -1,0 +1,80 @@
+2026-05-11 11:06:34,379 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-11 11:06:34,626 - ERROR - Order failed
+Traceback (most recent call last):
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\trading_bot_submission\bot\orders.py", line 26, in place_order
+    response = client.futures_create_order(**params)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 356, in _request
+    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
+    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 268, in _generate_signature
+    return sig_func(query_string)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
+    assert self.API_SECRET, "API Secret required for private endpoints"
+           ^^^^^^^^^^^^^^^
+AssertionError: API Secret required for private endpoints
+2026-05-11 13:44:37,202 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-11 13:44:37,451 - ERROR - Order failed
+Traceback (most recent call last):
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\trading_bot_submission\bot\orders.py", line 26, in place_order
+    response = client.futures_create_order(**params)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 356, in _request
+    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
+    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 268, in _generate_signature
+    return sig_func(query_string)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
+    assert self.API_SECRET, "API Secret required for private endpoints"
+           ^^^^^^^^^^^^^^^
+AssertionError: API Secret required for private endpoints
+2026-05-11 13:47:28,444 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-11 13:47:28,843 - ERROR - Order failed
+Traceback (most recent call last):
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\trading_bot_submission\bot\orders.py", line 26, in place_order
+    response = client.futures_create_order(**params)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-11 13:51:09,240 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-11 13:51:09,591 - ERROR - Order failed
+Traceback (most recent call last):
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\trading_bot_submission\bot\orders.py", line 26, in place_order
+    response = client.futures_create_order(**params)
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\Downloads\trading_bot_submission\venv\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-11 13:57:20,186 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-11 13:57:20,777 - INFO - Response: {'orderId': 13129004055, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'QYwKWBZp2tQj7Id594GNQd', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1778488040143}

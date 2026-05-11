@@ -1,0 +1,2 @@
+2026-05-11 10:00:00 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-11 10:00:01 - INFO - Response: {'orderId': 123456789, 'status': 'FILLED', 'executedQty': '0.001', 'avgPrice': '103500.00'}
